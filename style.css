@@ -1,0 +1,543 @@
+.container{
+    position: relative;
+  }
+  
+  .container::-webkit-scrollbar{
+    
+    display: none;
+  
+      }
+  
+  
+  .container .card{
+    position: relative;
+    width: 270px;
+    height: 360px;
+    background:#d7f2df;
+    border-radius: 20px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  
+  .container .card:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:#00afef;
+    clip-path: circle(100px at 80% 20%);
+    transition: 0.5s ease-in-out;
+  }
+  
+  .container .card:hover:before{
+    clip-path: circle(280px at 80% -20%);
+  }
+  
+  .container .card:after{
+    position: absolute;
+    top: 30%;
+    left: -20%;
+    font-size: 12em;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(255,255,25,0.05)
+  }
+  
+  .container .card .imgBx{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10000;
+    width: 100%;
+    height: 220px;
+    transition: 0.5s;
+  }
+  
+  .container .card:hover .imgBx{
+    top: 0%;
+    transform: translateY(0%);
+      
+  }
+  
+  .container .card .imgBx img{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+  }
+  
+  .container .card .contentBx{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    transition: 1s;
+    z-index: 10;
+  }
+  
+  .container .card:hover .contentBx{
+    height: 184px;
+  }
+  
+  .container .card .contentBx h2{
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color:rgb(37, 35, 35);
+   
+    margin-bottom: 5px;
+    padding: 2px 8px;
+  }
+  
+  .container .card .contentBx .rating, .container .card .contentBx .review {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    transition: 0.5s;opacity: 0;
+    visibility: hidden;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  
+  .container .card:hover .contentBx .rating{
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.5s;
+  }
+  
+  .container .card:hover .contentBx .review{
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.6s;
+  }
+  
+  .container .card .contentBx .rating h3, .container .card .contentBx .review h3{
+    color: #030303;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 10px;
+  }
+  
+
+  
+
+
+
+
+  
+  
+  
+  
+  
+  
+    
+  .container2{
+    position: relative;
+  }
+  
+  .container2::-webkit-scrollbar{
+    
+    display: none;
+  
+      }
+  
+  
+  .container2 .card2{
+    position: relative;
+    width: 270px;
+    height: 360px;
+    background:#d7f2df;
+    border-radius: 20px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  
+  .container2 .card2:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:#00afef;
+    clip-path: circle(100px at 80% 20%);
+    transition: 0.5s ease-in-out;
+  }
+  
+  .container2 .card2:hover:before{
+    clip-path: circle(280px at 80% -20%);
+  }
+  
+  .container2 .card2:after{
+    position: absolute;
+    top: 30%;
+    left: -20%;
+    font-size: 12em;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(255,255,25,0.05)
+  }
+  
+  .container2 .card2 .imgBx{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10000;
+    width: 100%;
+    height: 220px;
+    transition: 0.5s;
+  }
+  
+  .container2 .card2:hover .imgBx{
+    top: 0%;
+    transform: translateY(0%);
+      
+  }
+  
+  .container2 .card2 .imgBx img{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+  }
+  
+  .container2 .card2 .contentBx{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    transition: 1s;
+    z-index: 10;
+  }
+  
+  .container2 .card2:hover .contentBx{
+    height: 184px;
+  }
+  
+  .container2 .card2 .contentBx h2{
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color:rgb(37, 35, 35);
+   
+    margin-bottom: 5px;
+    padding: 2px 8px;
+  }
+  
+  .container2 .card2 .contentBx .rating, .container2 .card2 .contentBx .review {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    transition: 0.5s;opacity: 0;
+    visibility: hidden;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  
+  .container2 .card2:hover .contentBx .rating{
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.5s;
+  }
+  
+  .container2 .card2:hover .contentBx .review{
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.6s;
+  }
+  
+  .container2 .card2 .contentBx .rating h3, .container2 .card2 .contentBx .review h3{
+    color: #030303;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 10px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .container3{
+    position: relative;
+  }
+  
+  .container3::-webkit-scrollbar{
+    
+    display: none;
+  
+      }
+  
+  
+  .container3 .card3{
+    position: relative;
+    width: 270px;
+    height: 360px;
+    background:#d7f2df;
+    border-radius: 20px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  
+  .container3 .card3:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:#00afef;
+    clip-path: circle(100px at 80% 20%);
+    transition: 0.5s ease-in-out;
+  }
+  
+  .container3 .card3:hover:before{
+    clip-path: circle(280px at 80% -20%);
+  }
+  
+  .container3 .card3:after{
+    position: absolute;
+    top: 30%;
+    left: -20%;
+    font-size: 12em;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(255,255,25,0.05)
+  }
+  
+  .container3 .card3 .imgBx{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10000;
+    width: 100%;
+    height: 220px;
+    transition: 0.5s;
+  }
+  
+  .container3 .card3:hover .imgBx{
+    top: 0%;
+    transform: translateY(0%);
+      
+  }
+  
+  .container3 .card3 .imgBx img{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+  }
+  
+  .container3 .card3 .contentBx{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    transition: 1s;
+    z-index: 10;
+  }
+  
+  .container3 .card3:hover .contentBx{
+    height: 184px;
+  }
+  
+  .container3 .card3 .contentBx h2{
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color:rgb(37, 35, 35);
+   
+    margin-bottom: 5px;
+    padding: 2px 8px;
+  }
+  
+  .container3 .card3 .contentBx .rating, .container3 .card3 .contentBx .review {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    transition: 0.5s;opacity: 0;
+    visibility: hidden;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  
+  .container3 .card3:hover .contentBx .rating{
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.5s;
+  }
+  
+  .container3 .card3:hover .contentBx .review{
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.6s;
+  }
+  
+  .container3 .card3 .contentBx .rating h3, .container3 .card3 .contentBx .review h3{
+    color: #030303;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 10px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .container4{
+    position: relative;
+  }
+  
+  .container4::-webkit-scrollbar{
+    
+    display: none;
+  
+      }
+  
+  
+  .container4 .card4{
+    position: relative;
+    width: 270px;
+    height: 360px;
+    background:#d7f2df;
+    border-radius: 20px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  
+  .container4 .card4:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:#00afef;
+    clip-path: circle(100px at 80% 20%);
+    transition: 0.5s ease-in-out;
+  }
+  
+  .container4 .card4:hover:before{
+    clip-path: circle(280px at 80% -20%);
+  }
+  
+  .container4 .card4:after{
+    position: absolute;
+    top: 30%;
+    left: -20%;
+    font-size: 12em;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(255,255,25,0.05)
+  }
+  
+  .container4 .card4 .imgBx{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10000;
+    width: 100%;
+    height: 220px;
+    transition: 0.5s;
+  }
+  
+  .container4 .card4:hover .imgBx{
+    top: 0%;
+    transform: translateY(0%);
+      
+  }
+  
+  .container4 .card4 .imgBx img{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+  }
+  
+  .container4 .card4 .contentBx{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    transition: 1s;
+    z-index: 10;
+  }
+  
+  .container4 .card4:hover .contentBx{
+    height: 184px;
+  }
+  
+  .container4 .card4 .contentBx h2{
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color:rgb(37, 35, 35);
+    margin-bottom: 5px;
+    padding: 2px 8px;
+  }
+  
+  .container4 .card4 .contentBx .rating, .container4 .card4 .contentBx .review {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    transition: 0.5s;opacity: 0;
+    visibility: hidden;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  
+  .container4 .card4:hover .contentBx .rating{
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.5s;
+  }
+  
+  .container4 .card4:hover .contentBx .review{
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.6s;
+  }
+  
+  .container4 .card4 .contentBx .rating h3, .container4 .card4 .contentBx .review h3{
+    color: #030303;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 10px;
+  }
